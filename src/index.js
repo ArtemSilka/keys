@@ -1,24 +1,30 @@
 import "./styles/index.scss";
 import { WHITE, BLACK, whiteKeys, blackKeys } from './keyboard'
+import { isRecording, recordNote } from './record'
 
 const keys = document.querySelectorAll('.key')
 
+// sounds
 keys.forEach(key => {
     key.addEventListener('click', () => playNote(key))
 })
 
-function playNote(key) {
+export function playNote(key) {
+    if (isRecording()) recordNote(key.dataset.note)
     const noteAudio = document.getElementById(key.dataset.note)
     noteAudio.currentTime = 0;
     noteAudio.play()
     key.classList.add('active')
+    // setTimeout(() => {
+    //     key.classList.remove('active'), 100000
+    // })
     noteAudio.addEventListener('ended', () => {
         key.classList.remove('active')
     })
 }
 
+// keyboard
 document.addEventListener('keydown', e => {
-    // fixed noise when press and hold key 
     if (e.repeat) return
 
     const key = e.key
