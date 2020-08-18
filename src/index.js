@@ -1,13 +1,7 @@
 import "./styles/index.scss";
-
-const WHITE = ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k']
-const BLACK = ['w', 'e', 't', 'y', 'u']
+import { WHITE, BLACK, whiteKeys, blackKeys } from './keyboard'
 
 const keys = document.querySelectorAll('.key')
-
-const whiteKeys = document.querySelectorAll('.key.white')
-const blackKeys = document.querySelectorAll('.key.black')
-
 
 keys.forEach(key => {
     key.addEventListener('click', () => playNote(key))
@@ -24,7 +18,7 @@ function playNote(key) {
 }
 
 document.addEventListener('keydown', e => {
-    // fix noise when press and hold key 
+    // fixed noise when press and hold key 
     if (e.repeat) return
 
     const key = e.key
