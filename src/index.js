@@ -24,6 +24,9 @@ function playNote(key) {
 }
 
 document.addEventListener('keydown', e => {
+    // fix noise when press and hold key 
+    if (e.repeat) return
+
     const key = e.key
     const whiteKeyIndex = WHITE.indexOf(key)
     const blackKeyIndex = BLACK.indexOf(key)
