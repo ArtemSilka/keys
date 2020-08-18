@@ -1,6 +1,6 @@
 import "./styles/index.scss";
 
-const WHITE = ['a', 's', 'd', 'f', 'g', 'h', 'j']
+const WHITE = ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k']
 const BLACK = ['w', 'e', 't', 'y', 'u']
 
 const keys = document.querySelectorAll('.key')
