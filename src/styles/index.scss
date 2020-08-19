@@ -57,23 +57,35 @@
 .control {
   display: flex;
   flex-direction: column;
+  height: 402px;
+  padding: 20px;
 
 }
 
 .btn {
-  background-color: darkseagreen;
+    background-color: palegreen;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+    font-size: 20px;
+    font-family: monospace;
+    margin-bottom: 10px;
 }
 
 .record-button.active {
   background-color: darkred;
 }
 
-.play {
+.play-button {
   display: none;
 }
 
-.play.show {
+.play-button.show {
   display: flex;
+  width: 100px;
+  background: palegreen;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .top {
@@ -94,6 +106,3 @@
   height: 215px;
 }
 
-.test {
-  height: 215px;
-}
