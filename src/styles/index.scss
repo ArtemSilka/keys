@@ -3,9 +3,9 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin-left: 18%;
 }
   
 .piano {
@@ -62,19 +62,8 @@
 
 }
 
-.btn {
-    background-color: palegreen;
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
-    font-size: 20px;
-    font-family: monospace;
-    margin-bottom: 10px;
-}
-
 .record-button.active {
-  background-color: darkred;
+  background-color: rgb(201, 2, 2);
 }
 
 .play-button {
@@ -83,9 +72,6 @@
 
 .play-button.show {
   display: flex;
-  width: 100px;
-  background: palegreen;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .top {
@@ -99,10 +85,31 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  
 }
 
 .top.active {
   height: 215px;
 }
 
+.btn {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  background-color: rgb(143, 143, 143);
+  border-radius: 50%;
+  width: 60px;
+  border: solid black 5px;
+  margin: 0 0 20px 20px;
+}
+
+.btn:hover {
+  background-color: rgb(24, 201, 18);
+  width: 58px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  width: 60px;
+}
