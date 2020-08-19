@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .main {
   margin: 0;
   min-height: 100vh;
@@ -120,8 +124,18 @@
   justify-content: center;
 }
 
-.links {
+.links1 {
   width: 60px;
+  border-radius: 12px;
+}
+
+.links2 {
+  width: 60px;
+  border-radius: 25px;
+}
+
+.links1:hover,.links2:hover {
+  box-shadow: -1px 0px 10px 7px rgba(205, 133, 63, 0.4);
 }
 
 .learn {
