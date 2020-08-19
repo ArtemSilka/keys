@@ -15,7 +15,7 @@ Piano will allow user to have real piano/ synthesizer experience.
  
 This app will consist of a single screen with navbar links to the Github, my LinkedIn.
 
-![](/wireframe.png)
+![](/dist/images/wireframe.png)
 
 ## Implementation Timeline 
 
@@ -27,6 +27,6 @@ This app will consist of a single screen with navbar links to the Github, my Lin
 
 ## BONUS 
 
-* User will be able to record melody/ donwload/ listen
+* User will be able to record and listen/playback melody
 
-* Tutorial option.
+* Tutorial/learning mode.
