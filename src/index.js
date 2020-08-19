@@ -15,13 +15,12 @@ export function playNote(key) {
     const noteAudio = document.getElementById(key.dataset.note)
     noteAudio.currentTime = 0;
     noteAudio.play()
-    key.classList.add('active')
-    // setTimeout(() => {
-    //     key.classList.remove('active'), 100000
-    // })
-    noteAudio.addEventListener('ended', () => {
-        key.classList.remove('active')
-    })
+    setTimeout(() => {
+        key.classList.add('active')
+        setTimeout(() => {
+            key.classList.remove('active')
+        }, 500) 
+    }, )
 }
 
 // keyboard
