@@ -1,6 +1,7 @@
 import "./styles/index.scss";
 import { WHITE, BLACK, whiteKeys, blackKeys } from './keyboard'
 import { isRecording, recordNote } from './record'
+import { playSampleSong } from './sample'
 
 const keys = document.querySelectorAll('.key')
 
@@ -34,3 +35,8 @@ document.addEventListener('keydown', e => {
     if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex])
     if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex])
 })
+
+// sample 
+
+export const sampleButton = document.querySelector('.beethoven')
+sampleButton.addEventListener('click', playSampleSong)
