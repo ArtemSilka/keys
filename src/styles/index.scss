@@ -205,6 +205,7 @@ body, p {
   font-size: 18px;
 }
 
-.modal-box:last-child p {
-  margin-bottom: 15px;
+.last {
+    margin-bottom: -15px;
+    margin-top: 50px;
 }
