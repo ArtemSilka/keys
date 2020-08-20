@@ -20,6 +20,8 @@ body {
   display: flex;
 }
 
+// keys
+
 .white {
   width: 100px;
   height: 400px;
@@ -66,14 +68,14 @@ body {
   height: 235px;
 }
 
-// control
+// control buttons
 
 .control {
   display: flex;
   flex-direction: column;
   height: 402px;
   padding: 20px;
-
+  justify-content: space-between;
 }
 
 .record-button.active {
@@ -86,23 +88,6 @@ body {
 
 .play-button.show {
   display: flex;
-}
-
-.topp {
-  background-color: rgb(32, 31, 31);
-  width: 40px;
-  height: 220px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border: rgb(85, 85, 85) solid 1px;
-  box-shadow: inset 0px -1px 2px rgba(255, 255, 255, .4), 0 2px 3px rgba(0, 0, 0, .4);
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.topp.active {
-  height: 215px;
 }
 
 .btn {
@@ -118,6 +103,8 @@ body {
   background-color: rgb(24, 201, 18);
   width: 58px;
 }
+
+// navbar links
 
 .navbar {
   display: flex;
@@ -138,6 +125,8 @@ body {
   box-shadow: -1px 0px 10px 7px rgba(205, 133, 63, 0.4);
 }
 
+// sample mode
+
 .learn {
   background-color: peru;
 }
@@ -154,4 +143,44 @@ body {
 .composers:hover {
   box-shadow: -1px 0px 10px 7px rgba(205, 133, 63, 0.4);
   width: 88px;
+}
+
+// about modal
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: none;
+}
+
+.display {
+  display: block;
+}
+
+.modal-box-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    text-align: center;
+    width: 484px;
+    margin: auto;
+    min-height: initial;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 10px;
+}
+
+.modal-box {
+    min-height: 400px;
+    padding: 20px 10px 24px;
+}
+
+.how-to {
+  margin: 0 0 0 20px;
 }

@@ -1,7 +1,7 @@
 import "./styles/index.scss";
 import { WHITE, BLACK, whiteKeys, blackKeys } from './keyboard'
 import { isRecording, recordNote } from './record'
-import { playSampleSong } from './sample'
+import { playBeethoven, playMozart, playVivaldi } from './sample'
 
 const keys = document.querySelectorAll('.key')
 
@@ -37,5 +37,21 @@ document.addEventListener('keydown', e => {
 
 // sample 
 
-export const sampleButton = document.querySelector('.beethoven')
-sampleButton.addEventListener('click', playSampleSong)
+export const beethoven = document.querySelector('.beethoven')
+export const mozart = document.querySelector('.mozart')
+export const vivaldi = document.querySelector('.vivaldi')
+beethoven.addEventListener('click', playBeethoven)
+mozart.addEventListener('click', playMozart)
+vivaldi.addEventListener('click', playVivaldi)
+
+// modal 
+
+const modal = document.querySelector('.modal-container')
+const howTo = document.querySelector('.how-to')
+
+howTo.addEventListener('click', () => {
+    modal.classList.add('display')
+    modal.addEventListener('click', () => {
+        modal.classList.remove('display')
+    })
+})
