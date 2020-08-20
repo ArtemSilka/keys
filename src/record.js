@@ -38,7 +38,7 @@ function stopRecording() {
 }
 
 export function playSong() {
-    console.log(songNotes)
+    // console.log(songNotes)
     if (songNotes.length === 0) return
     songNotes.forEach(note => {
         setTimeout(() => {
