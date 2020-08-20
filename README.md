@@ -3,7 +3,8 @@
 Piano will allow user to have real piano/ synthesizer experience.
 
 ## Technologies, Libraries, APIs & MVP
-* HTML/ CSS
+* HTML5
+* SCSS
 * Vanilla JavaScript
 * Webpack
 
@@ -28,3 +29,5 @@ This app will consist of a single screen with navbar links to the Github, my Lin
 * User will be able to record and listen/playback melody
 
 * Tutorial/learning mode.
+
+![](/dist/images/tutorial.png)
