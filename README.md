@@ -21,9 +21,7 @@ This app will consist of a single screen with navbar links to the Github, my Lin
 
 * Day1: Main structure. Render all keys to the screen. CSS.
 
-* Day2: Attach sound, set up onClick eventlistener.
-
-* Day3: Polish it up, final CSS, bugs.
+* Day2/ 3: Attach sound, set up onClick eventlistener/ Polish it up, final CSS, bugs.
 
 ## BONUS 
 
