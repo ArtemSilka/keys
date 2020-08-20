@@ -10,7 +10,10 @@ Piano will allow user to have real piano/ synthesizer experience.
 
 * In addition, this project will include: 
   * A tutorial
+
+![](/dist/images/tutorial-modal.png)
   * A production README
+  
   
 ## Wireframes
  
@@ -30,4 +33,4 @@ This app will consist of a single screen with navbar links to the Github, my Lin
 
 * Tutorial/learning mode.
 
-![](/dist/images/tutorial.png)
+![](/dist/images/tutorial-mode.png)
