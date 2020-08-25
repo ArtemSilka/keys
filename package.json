@@ -14,7 +14,7 @@
     "webpack:watch": "webpack --watch --config webpack.dev.js",
     "webpack:build": "webpack --config webpack.prod.js  --optimize-minimize"
   },
-  "author": "",
+  "author": "artemsilka",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.11.1",
