@@ -1,6 +1,6 @@
 import "./styles/index.scss";
 import { WHITE, BLACK, whiteKeys, blackKeys } from './keyboard'
-import { isRecording, recordNote } from './record'
+import { isRecording, recordNote } from './rec'
 import { playBeethoven, playMozart, playVivaldi } from './sample'
 
 const keys = document.querySelectorAll('.key')
